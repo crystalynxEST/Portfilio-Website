@@ -1,0 +1,206 @@
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+  }
+
+body {
+ 
+    background: linear-gradient( #080122, rgb(13, 4, 54));
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+.girly {
+    display: flex;
+    align-items: center;
+}
+
+.girly:after {
+    content: "";
+    position: absolute;
+    background-image: url(./resources/images/heading_ver5-01-01.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    border: none;
+    z-index: -1;
+    height: 100%;
+}
+
+ul.navigation-items {
+    list-style: none;
+    margin-top: 1%;
+}
+
+li.navigation-item {
+    display: inline-block;
+    background: rgba(84, 3, 109, 0.7);
+    border: 10px;
+    border-radius: 12%;
+    font-size: 1.5rem;
+    display: inline-block;
+    padding: 12px;
+    margin-right: 5px;
+    letter-spacing: 4px;
+    list-style: none;
+
+}
+
+li.navigation-item a {
+    color: white;
+    z-index: 2;
+
+}
+
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { text-decoration:underline; }
+
+
+a:active { text-decoration:double; }
+
+#introduction {
+    margin-top: 20rem;
+    top: 10rem;
+    overflow: hidden;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+}
+
+
+h1 {
+    color: white;
+}
+
+h4 {
+    color: rgb(189, 179, 192);
+    text-transform: uppercase;
+}
+
+h5 {
+    color: rgb(189, 187, 202);
+}
+
+
+h2 {
+    color: white;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    display: inline-flex;
+    
+    margin-right: 20px;
+    padding-left: 20vw;
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    padding-left: 20vw;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    padding: 0 18px;
+    background-color: #f1f1f1;
+    
+  }
+
+  .collapsible:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+
+  .kristi {
+
+    padding-top: 0.5rem;
+    position: absolute;
+    
+}
+
+
+.kristi img {
+    margin-top: 5vw;
+    margin-left: 37vw;
+    margin-right: auto;
+    width: 23vw;
+    height: auto;
+    border-radius: 20px;
+    border: 2px solid white;
+    z-index: 1;
+}
+
+.kristi h3 {
+
+    font-size: 2vw;
+    border: 1px solid white;
+    background-color: white;
+    padding: 1vw;
+    padding-left: -1%;
+    border-radius: 29px;
+    font-weight: bold;
+    opacity: 62%;
+    margin-right: 41vw;
+    margin-left: 43vw;
+    text-align: center;
+}
+
+p#whatAmI {
+    font-size: 2vw;
+    border: 1px solid white;
+    background-color: white;
+    padding: 1vw;
+    border-radius: 29px;
+    font-weight: bold;
+    opacity: 62%;
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
+
+
+  #bottomPicture {
+margin-top: 22vw;
+    position: relative;
+    bottom: 0;
+}
+
+#bottomPicture img{
+   width: 100%;
+   height: auto;
+    position: relative;
+    margin: auto;
+    z-index: -2;
+}
+
