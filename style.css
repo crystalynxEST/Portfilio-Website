@@ -1,11 +1,28 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+
+  @import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800');
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+
 html {
     scroll-behavior: smooth;
     font-size: 16px;
+    font-family: 'Fira Sans', sans-serif;
   }
 
 body {
  
-    background: linear-gradient( #080122, rgb(13, 4, 54));
+    background: linear-gradient( #060644, rgb(38, 4, 54));
+    font-family: 'Fira Sans', sans-serif;
+
+    
 }
 
 header {
@@ -16,14 +33,16 @@ header {
 .girly {
     display: flex;
     align-items: center;
+    height: 100%;
 }
 
 .girly:after {
     content: "";
     position: absolute;
-    background-image: url(./resources/images/heading_ver5-01-01.png);
-    background-position: center;
-    background-size: cover;
+    display: flex;
+    background-image: url(./resources/images/heading_ver6-01.png);
+    background-position: cover;
+    background-size: 100% auto;
     background-repeat: no-repeat;
     top: 0;
     right: 0;
@@ -32,19 +51,22 @@ header {
     border: none;
     z-index: -1;
     height: 100%;
+ 
 }
 
-ul.navigation-items {
+.navigation-items {
     list-style: none;
-    margin-top: 1%;
+    margin-top: 3vw;
+    margin-left: 4vw;
 }
 
 li.navigation-item {
     display: inline-block;
-    background: rgba(84, 3, 109, 0.7);
+    background: rgba(190, 220, 248, 0.7);
     border: 10px;
     border-radius: 12%;
-    font-size: 1.5rem;
+    font-size: 2.5vw;
+
     display: inline-block;
     padding: 12px;
     margin-right: 5px;
@@ -54,8 +76,9 @@ li.navigation-item {
 }
 
 li.navigation-item a {
-    color: white;
+    color: rgb(55, 9, 65);
     z-index: 2;
+    font-family: 'PT Sans', sans-serif;
 
 }
 
@@ -80,25 +103,141 @@ a:active { text-decoration:double; }
 }
 
 
+/* Hello there part */
+
+#introduction {
+  margin-left: 4vw;
+  text-align: center;
+}
+
 h1 {
     color: white;
+    font-family: 'Alex Brush', cursive;
+    font-size: 6vw;
+    font-weight: 200;
+    border-top: solid;
+    border-bottom: solid;
+    border-width: 2px;
+    padding: 10px 29px;
+    border-color: purple;
 }
-
-h4 {
-    color: rgb(189, 179, 192);
-    text-transform: uppercase;
-}
-
-h5 {
-    color: rgb(189, 187, 202);
-}
-
 
 h2 {
-    color: white;
+    color: rgb(189, 187, 202);
+    font-size: 2vw;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 4px;
 }
 
-/* Style the button that is used to open and close the collapsible content */
+h3 {
+  color: white;
+  text-transform: uppercase;
+  font-family: 'PT Sans', sans-serif;
+  letter-spacing: 3px;
+  font-size: 1.3vw;
+  font-weight: 100;
+}
+
+/*About me part*/
+
+#aboutMe {
+  margin: 10vw 5vw 8vw 26vw;
+
+#aboutMe h4 {
+color: white;
+font-family: 'PT Sans', sans-serif;
+letter-spacing: 3px;
+font-size: 1.7vw;
+font-weight: 100;
+text-align: right;
+}
+
+/* Slider */
+
+.parent_slider {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    cursor: move;
+  }
+  
+  .image {
+    width: 50vw;
+    height: 50vw;
+    object-fit: contain;
+  }
+  
+  .slide {
+    width: 100%;
+    display: flex !important;
+  }
+  
+  .text {
+    width: 50%;
+    display: flex;
+  }
+  
+  .picture {
+    width: 50%;
+    display: flex;
+  }
+  
+  .text_slide {
+    margin-left: 30px;
+    margin-right: 10px;
+    max-width: 426px;
+    font-size: 22px;
+    font-family: "Avenir-Roman";
+    line-height: 30px;
+    padding-top: 27px;
+    font-weight: 300;
+    letter-spacing: 0.44px;
+    color: #323232;
+  }
+  
+  .author-slider {
+    padding-top: 40px;
+    margin-left: 30px;
+    position: relative;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 0.86;
+    letter-spacing: 1.12px;
+    color: #323232;
+  }
+  
+  .slickkdots li button:hover,
+  .slickkdots li button:focus {
+    outline: none;
+  }
+  
+  .slickkdots {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 60%;
+    bottom: 0;
+    list-style-type: none;
+  }
+  .slickkdots li {
+    margin: 0 12px;
+  }
+  .slickkdots button {
+    display: block;
+    width: 17px;
+    height: 17px;
+    border: none;
+    border-radius: 100%;
+    background-color: #EBEBEB;
+    text-indent: -9999px;
+  }
+  .slickkdots li.slick-active button {
+    background-color: #00BFA5;
+  }
+
+
+/* Style the button that is used to open and close the collapsible content 
 .collapsible {
     display: inline-flex;
     
@@ -113,14 +252,14 @@ h2 {
     text-align: center;
     outline: none;
     font-size: 15px;
-  }
+  }*/
   
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) 
   .active, .collapsible:hover {
     background-color: #ccc;
-  }
+  } 
   
-  /* Style the collapsible content. Note: hidden by default */
+  /* Style the collapsible content. Note: hidden by default 
   .content {
     padding-left: 20vw;
     max-height: 0;
@@ -132,7 +271,7 @@ h2 {
   }
 
   .collapsible:after {
-    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    content: '\02795'; /* Unicode character for "plus" sign (+) 
     font-size: 13px;
     color: white;
     float: right;
@@ -140,8 +279,11 @@ h2 {
   }
   
   .active:after {
-    content: "\2796"; /* Unicode character for "minus" sign (-) */
-  }
+    content: "\2796"; /* Unicode character for "minus" sign (-) 
+  } 
+
+ 
+/* Bottom artist info */
 
   .kristi {
 
@@ -189,6 +331,8 @@ p#whatAmI {
     margin-right: 20vw;
 }
 
+
+/* Footer image */
 
   #bottomPicture {
 margin-top: 22vw;
