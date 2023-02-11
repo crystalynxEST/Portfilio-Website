@@ -19,7 +19,7 @@ html {
 
 body {
  
-    background: linear-gradient( #060644, rgb(38, 4, 54));
+  background-color: black;
     font-family: 'Fira Sans', sans-serif;
 
     
@@ -108,6 +108,8 @@ a:active { text-decoration:double; }
 #introduction {
   margin-left: 4vw;
   text-align: center;
+  top: 5vw;
+  position: relative;
 }
 
 h1 {
@@ -138,73 +140,194 @@ h3 {
   font-weight: 100;
 }
 
+
 /*About me part*/
 
 #aboutMe {
-  margin: 10vw 5vw 8vw 26vw;
+  margin: 10vw 5vw 8vw 5vw;
+}
+
+#aboutMe h2 {
+ 
+  text-align: right;
+  color: rgb(255, 255, 255);
+  font-size: 4vw;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 4px;
+  margin-top: -2vw;
+  margin-bottom: -2vw;
+}
+
+#aboutMe h3 {
+  color: #a817e9;
+  margin-top: 15vw;
+  text-align: right;
+  text-transform: uppercase;
+  font-family: 'PT Sans', sans-serif;
+  letter-spacing: 2px;
+  font-size: 2vw;
+  font-weight: bold;
+}
 
 #aboutMe h4 {
 color: white;
-font-family: 'PT Sans', sans-serif;
-letter-spacing: 3px;
-font-size: 1.7vw;
-font-weight: 100;
-text-align: right;
+
+  font-family: 'PT Sans', sans-serif;
+  letter-spacing: 3px;
+  font-size: 1.3vw;
+  font-weight: 100;
+  text-align: right;
+  border-top: solid;
+  border-width: 2px;
+  padding: 10px 0px;
+  border-color: purple;
+
 }
 
+
+#projectLogo {
+  display: block;
+  position: relative;
+  margin-left: 30vw;
+ 
+}
+#projectLogo img {
+  height: 41vw;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  margin-top: -6vw;
+  
+}
 /* Slider */
 
 .parent_slider {
-    width: 100%;
+  margin-top: 9vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  height: 63vw;
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
     position: relative;
     cursor: move;
+
+
+  }
+  
+
+
+  .slide {
+  
+    height: 32vw;
+    display: flex !important;
+    
+   
+  }
+
+  .picture {
+    height: 63vw;
+    width: auto;
+    display: flex;
+
+    margin-left: 20px;
+    justify-content: space-evenly;
+    justify-items: right;
+   
   }
   
   .image {
-    width: 50vw;
-    height: 50vw;
-    object-fit: contain;
+
+    max-width: 50vw;
+    height: 32vw;
+    margin-right: 1vw;
+    object-fit: contain;   
+    position: relative;
+
   }
-  
-  .slide {
-    width: 100%;
-    display: flex !important;
-  }
-  
+
+  .right_column,texts {
+    background-color: #2a0653;
+    height: 100%;
+    padding-top: 2vw;
+}
+    
   .text {
-    width: 50%;
+   
+    width: 100%;
+    height: auto;
     display: flex;
+    
+  }
+  .gg-controller {
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block !important;
+    transform: scale(var(--ggs,1));
+    width: 8px;
+    height: 8px;
+    border: 2px solid;
+    border-radius: 100px;
+    margin-right: 1vw;
+}
+
+.gg-controller::before {
+    content: "";
+    display: inline-block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    box-shadow:
+        -6px -6px 0 -4px,
+        6px 6px 0 -4px,
+        6px -6px 0 -4px,
+        -6px 6px 0 -4px;
+    left: -5px;
+    top: -5px;
+    transform: rotate(45deg)
+}
+  span.slideDes {
+    display: inline-block;
+    color: white;
+    /* text-transform: uppercase; */
+    font-family: 'Alex Brush', cursive;
+    letter-spacing: 4px;
+    font-size: 2.5vw;
+    font-weight: bold;
+    background-color: hsl(231deg 27% 49%);
+    padding: 1vw 8vw 1vw 2vw;
   }
   
-  .picture {
-    width: 50%;
-    display: flex;
-  }
+
   
   .text_slide {
-    margin-left: 30px;
-    margin-right: 10px;
+    margin-top: 1vw;
+    margin-left: 1vw;
+    margin-right: 2vw;
     max-width: 426px;
-    font-size: 22px;
-    font-family: "Avenir-Roman";
-    line-height: 30px;
-    padding-top: 27px;
+    font-size: 1.6vw;
+    font-family: 'Roboto', sans-serif;
+    line-height: 2vw;
+    padding-top: 0px;
     font-weight: 300;
     letter-spacing: 0.44px;
-    color: #323232;
+    color: #ffffff;
+    position: relative;
   }
   
   .author-slider {
+    
     padding-top: 40px;
-    margin-left: 30px;
+    margin-left: 2vw;
     position: relative;
-    font-size: 36px;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.6vw;
     font-weight: 500;
-    line-height: 0.86;
+    line-height: 1.3;
     letter-spacing: 1.12px;
-    color: #323232;
+    color: #c6c1c1;
+    position: relative;
   }
   
   .slickkdots li button:hover,
@@ -215,25 +338,25 @@ text-align: right;
   .slickkdots {
     display: flex;
     justify-content: center;
-    position: absolute;
-    left: 60%;
-    bottom: 0;
+    position: relative;
+    left: 10.5vw;
     list-style-type: none;
+    top: -49vw;
   }
   .slickkdots li {
     margin: 0 12px;
   }
   .slickkdots button {
     display: block;
-    width: 17px;
-    height: 17px;
+    width: 1vw;
+    height: 1vw;
     border: none;
     border-radius: 100%;
     background-color: #EBEBEB;
     text-indent: -9999px;
   }
   .slickkdots li.slick-active button {
-    background-color: #00BFA5;
+    background-color: #9200bf;
   }
 
 
@@ -282,62 +405,110 @@ text-align: right;
     content: "\2796"; /* Unicode character for "minus" sign (-) 
   } 
 
- 
+ /* SKILLS */
+
+ #skills {
+  display: inline-flex;
+  width: 100%;
+  background-color: hsl(231deg 27% 49%);
+  height: 18vw;
+  padding: 3vw;
+  padding-left: 1vw;
+ }
+
+ span#skillsDes {
+  color: white;
+  font-family: 'Alex Brush', cursive;
+  font-size: 6vw;
+  font-weight: bold;
+  border-top: solid;
+  border-bottom: solid;
+  border-width: 2px;
+  padding: 10px 29px;
+  border-color: purple;
+  position: absolute;
+  margin-left: 36vw;
+  margin-top: -16vw;
+ }
+ .softwareImage {
+  height: 30vw;
+  width: 20vw;
+  margin-left: 1.5vw;
+ }
+
+ .softwareImage img {
+  height: 9vw;
+  width: 9vw;
+ }
+
+ h4.sotwareDes {
+  font-size: 2vw;
+  font-weight: 100;
+  color: white;
+  margin-top: 0.5vw;
+  text-align: center;
+ }
+
 /* Bottom artist info */
 
   .kristi {
 
     padding-top: 0.5rem;
     position: absolute;
+    margin-top: -14vw;
     
 }
 
 
 .kristi img {
-    margin-top: 5vw;
-    margin-left: 37vw;
-    margin-right: auto;
-    width: 23vw;
-    height: auto;
-    border-radius: 20px;
-    border: 2px solid white;
-    z-index: 1;
+  margin-left: 42vw;
+  margin-right: auto;
+  width: 15vw;
+  height: auto;
+  border-radius: 20px;
+  border: 2px solid purple;
+  margin-bottom: 2vw;
 }
+h3.kristiNimi {
 
-.kristi h3 {
+  letter-spacing: 4px;
+  font-size: 1.3vw;
+  border: 1px solid white;
+  font-family: 'PT Sans', sans-serif;
+  background: rgba(42, 6, 83, 0.5);
+  padding: 1.5vw;
+  border-radius: 29px;
+  font-weight: bold;
+  margin-right: 40.5vw;
+  margin-left: 41vw;
+  text-align: center;
+  color: white;
+  opacity: 83%;
 
-    font-size: 2vw;
-    border: 1px solid white;
-    background-color: white;
-    padding: 1vw;
-    padding-left: -1%;
-    border-radius: 29px;
-    font-weight: bold;
-    opacity: 62%;
-    margin-right: 41vw;
-    margin-left: 43vw;
-    text-align: center;
 }
-
 p#whatAmI {
-    font-size: 2vw;
-    border: 1px solid white;
-    background-color: white;
-    padding: 1vw;
-    border-radius: 29px;
-    font-weight: bold;
-    opacity: 62%;
-    margin-left: 20vw;
-    margin-right: 20vw;
+  font-size: 1.5vw;
+  border: 1px solid white;
+  font-family: 'PT Sans', sans-serif;
+  background: rgba(42, 6, 83, 0.5);
+  opacity: 70%;
+  padding: 1.5vw;
+  border-radius: 29px;
+  font-weight: 100;
+  margin-bottom: 1.5vw;
+  margin-right: 30vw;
+  margin-left: 30vw;
+  text-align: center;
+  color: white;
 }
 
 
 /* Footer image */
 
   #bottomPicture {
-margin-top: 22vw;
+margin-top: 29vw;
     position: relative;
-    bottom: 0;
+    bottom: -6px;
 }
 
 #bottomPicture img{
@@ -348,3 +519,7 @@ margin-top: 22vw;
     z-index: -2;
 }
 
+a#link {
+  color: white;
+
+}
